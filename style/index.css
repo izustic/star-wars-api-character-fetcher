@@ -133,3 +133,10 @@ img{
 .char.active .char-info{
   display: block;
 }
+
+@media (max-width: 700px){
+  .char-info{
+    text-align: center;
+  }
+}
+
