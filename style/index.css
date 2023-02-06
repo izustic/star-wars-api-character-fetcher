@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #292526;
+  --secondary-color: #f1f2f2;
+}
+
+body{
+  background-color: var(--primary-color);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+/* header */
+.nav{
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-image: url(../images/background1.png);
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 1;
+}
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.text-container {
+  z-index: 1;
+}
+
+.nav .hero{
+  cursor: pointer;
+  transition: .3s ease;
+}
+.nav .hero h2{
+  font-weight: 900;
+}
+.nav .hero:hover{
+  color: #ff3487;
+}
+.nav .navbar ul{
+  display: flex;
+
+}
+.nav .navbar ul li{
+  padding-left: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.nav .navbar ul li.active{
+  color: #ff3487
+}
+
+.nav .navbar ul li:hover{
+  color: #ff3487;
+}
+
+.nav .hero, .nav .navbar ul li {
+  z-index: 1;
+}
+/* body */
+#main{
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#main-h2{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.char{
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  width: 70vw;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.char-title{
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.char-title:hover {
+  color: #ff3487;
+}
+
+.char-info {
+  display: none;
+  height: auto;
+  transition: .3s ease;
+}
+img{
+  margin-top: 20px;
+  height: 45vh;
+}
+.char.active{
+  border: 1px solid #ff3487;
+
+}
+.char.active .char-info{
+  display: block;
+}
