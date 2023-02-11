@@ -24,7 +24,7 @@ body{
   color: var(--secondary-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 20px;
   background-image: url(../images/background1.png);
   background-position: center;
@@ -39,7 +39,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 55px;
+  height: 58px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
@@ -58,25 +58,8 @@ body{
 .nav .hero:hover{
   color: #ff3487;
 }
-.nav .navbar ul{
-  display: flex;
 
-}
-.nav .navbar ul li{
-  padding-left: 10px;
-  list-style-type: none;
-  cursor: pointer;
-  transition: .3s ease;
-}
-.nav .navbar ul li.active{
-  color: #ff3487
-}
-
-.nav .navbar ul li:hover{
-  color: #ff3487;
-}
-
-.nav .hero, .nav .navbar ul li {
+.nav .hero{
   z-index: 1;
 }
 /* body */
@@ -97,7 +80,7 @@ body{
   background-color: transparent;
   border: 1px solid #9fa4a8;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
   transition: 0.3s ease;
@@ -121,10 +104,15 @@ body{
   display: none;
   height: auto;
   transition: .3s ease;
+  padding: 30px;
+}
+.char-info p{
+  text-align: center;
+  margin-top: 10px;
 }
 img{
   margin-top: 20px;
-  height: 45vh;
+  height: 35vh;
 }
 .char.active{
   border: 1px solid #ff3487;
@@ -134,13 +122,11 @@ img{
   display: block;
 }
 
+@media (max-width: 600px){
 
-
-
-
-@media (max-width: 700px){
   .char-info{
     text-align: center;
   }
+ 
 }
 
