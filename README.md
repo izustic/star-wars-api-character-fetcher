@@ -1,4 +1,4 @@
-# Week-One-Node
+# Star Wars Characters
 
 ## Problem Description:
 
