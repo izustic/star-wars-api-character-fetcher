@@ -17,6 +17,6 @@ I created a SPA (Single Page Application) using HTML, CSS and JavaScript. It sho
 
 4. Page is responsive.
 
-5. Page is hosted on Netlify: 
+5. Page is live at: https://izustic.github.io/star-wars-api-character-fetcher/ 
 
 
